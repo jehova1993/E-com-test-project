@@ -14,7 +14,7 @@ use App\Http\Controllers\userController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('loginpage');
 });
-Route::get('/',[userController::class,'login']);
+Route::post('/login',[userController::class,'login']);
